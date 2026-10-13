@@ -1,0 +1,25 @@
+# Dependencies / build output
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# Environment / secrets — never commit real env files
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Keep example env files tracked
+!.env.example
+!**/.env.example
+
+# Logs / OS noise
+*.log
+.DS_Store
+
+# Codex CLI local tooling (not this repo's source; CLAUDE.md is the source of truth)
+.codex/
+AGENTS.md

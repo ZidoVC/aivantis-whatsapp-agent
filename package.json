@@ -1,0 +1,20 @@
+{
+  "name": "aivantis",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "demo:agent": "tsx scripts/demo-agent.ts",
+    "chat:agent": "tsx scripts/chat-agent.ts",
+    "demo:gating": "tsx scripts/demo-gating.ts",
+    "test:scenarios": "tsx scripts/run-test-scenarios.ts"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "tsx": "^4.22.4",
+    "turbo": "latest",
+    "typed-openapi": "^2.2.7"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

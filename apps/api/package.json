@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aivantis/booking-provider": "workspace:*",
+    "@anthropic-ai/sdk": "^0.104.1",
+    "@hono/node-server": "^2.0.4",
+    "@supabase/supabase-js": "^2.108.1",
+    "dotenv": "^17.4.2",
+    "hono": "^4.12.25",
+    "twilio": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^2.1.9"
+  }
+}

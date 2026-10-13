@@ -1,0 +1,24 @@
+{
+  "name": "@aivantis/booking-provider",
+  "version": "1.0.0",
+  "description": "Provider-agnostic booking abstraction for the Aivantis agent (Mock + Optima WS Adapter)",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "typescript": "^6.0.3",
+    "vitest": "^2.1.9"
+  }
+}
